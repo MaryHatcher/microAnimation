@@ -1,0 +1,130 @@
+body {
+    background-color:yellow;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    flex-direction:column;
+}
+
+.circle {
+    position:absolute;
+    border:1px solid black;    
+    height:85%;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:50%;
+}
+
+.word span{
+    font-family: 'Gideon Roman', cursive;
+    font-size: 5rem;
+    display:inline-block;
+}
+
+.word-3 span:nth-child(2) {
+    animation: smile-1 5s ease-in-out infinite;
+}
+
+.word-3 span:nth-child(7) {
+    animation: smile-1 5s ease-in-out infinite;    
+}
+
+@keyframes smile-1{
+    0%{
+        transform:translate(0,0);
+    }
+
+    40%{
+        transform: translate(0,50%);
+    }
+    55%{
+        transform: translate(0,50%);
+    }
+
+    100%{
+        transform:translate(0,0);
+    }
+}
+
+.word-3 span:nth-child(3) {
+    animation: smile-2 5s ease-in-out infinite;
+}
+
+.word-3 span:nth-child(6) {
+    animation: smile-2 5s ease-in-out infinite;    
+}
+
+@keyframes smile-2{
+    0%{
+        transform:translate(0,0);
+    }
+
+    40%{
+        transform: translate(0,70%);
+    }
+    55%{
+        transform: translate(0,70%);
+    }
+
+    100%{
+        transform:translate(0,0);
+    }
+}
+
+.word-3 span:nth-child(4) {
+    animation: smile-3 5s ease-in-out infinite;
+}
+
+.word-3 span:nth-child(5) {
+    animation: smile-3 5s ease-in-out infinite;    
+}
+
+@keyframes smile-3{
+    0%{
+        transform:translate(0,0);
+    }
+
+    40%{
+        transform: translate(0,90%);
+    }
+    55%{
+        transform: translate(0,90%);
+    }
+
+    100%{
+        transform:translate(0,0);
+    }
+}
+
+.word-2 span {
+    animation: disappear 5s ease-in-out infinite;
+}
+
+.word-1 span:nth-child(2) {
+    animation: disappear 5s ease-in-out infinite;
+}
+.word-1 span:nth-child(3) {
+    animation: disappear 5s ease-in-out infinite;
+}
+.word-1 span:nth-child(4) {
+    animation: disappear 5s ease-in-out infinite;
+}
+
+@keyframes disappear{
+    0%{
+        color:black;
+    }
+
+    40%{
+        color:yellow;
+    }
+    55%{
+        color:yellow;
+    }
+
+    100%{
+        color:black;
+    }
+}
